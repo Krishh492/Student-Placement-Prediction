@@ -1,4 +1,7 @@
 # Student Placement Prediction
+## 🚀 Live Demo
+
+👉 [Open Student Placement Predictor](https://student-placement-prediction-tmg3.onrender.com/)
 
 ## Project Overview
 This project predicts whether a student will be **Placed** or **Not Placed** based on their academic performance, skills, and other attributes. It is built as part of the **AICTE Machine Learning Internship** capstone project.
