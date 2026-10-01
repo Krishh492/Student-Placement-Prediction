@@ -1,0 +1,174 @@
+/* ── Global ───────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+  background: #f0f4f8;
+  color: #1f2328;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ───────────────────────────────────────────────────────────── */
+.site-header {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d6a9f 100%);
+  color: #ffffff;
+  padding: 2rem 0 1.8rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.5px;
+}
+
+.site-subtitle {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 0;
+}
+
+/* ── Main container ───────────────────────────────────────────────────── */
+main.container {
+  max-width: 860px;
+  flex: 1;
+}
+
+/* ── Result card ──────────────────────────────────────────────────────── */
+.result-card {
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.result-placed {
+  background: #f0fdf4;
+  border-color: #22c55e;
+}
+
+.result-not-placed {
+  background: #fff1f2;
+  border-color: #ef4444;
+}
+
+.result-icon {
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.result-label {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.result-note {
+  font-size: 0.83rem;
+  color: #57606a;
+}
+
+/* Probability bar */
+.proba-bar {
+  background: #e5e7eb;
+  border-radius: 999px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.proba-fill {
+  height: 100%;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ffffff;
+  min-width: 36px;
+  transition: width 0.5s ease;
+}
+
+.fill-placed     { background: #22c55e; }
+.fill-not-placed { background: #ef4444; }
+
+/* ── Form card ────────────────────────────────────────────────────────── */
+.form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.form-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e3a5f;
+  margin-bottom: 1.4rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* Labels */
+.form-label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #374151;
+}
+
+/* Range sliders */
+.form-range {
+  accent-color: #2d6a9f;
+}
+
+.range-value {
+  font-size: 0.82rem;
+  color: #57606a;
+  margin-top: 2px;
+}
+
+/* Predict button */
+.btn-predict {
+  background: linear-gradient(135deg, #1e3a5f, #2d6a9f);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: opacity 0.2s;
+}
+
+.btn-predict:hover {
+  opacity: 0.88;
+  color: #ffffff;
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────── */
+.site-footer-bottom {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.82rem;
+  color: #57606a;
+  border-top: 1px solid #e5e7eb;
+  background: #f7f8fa;
+  margin-top: 2rem;
+}
+
+/* ── Responsive tweaks ────────────────────────────────────────────────── */
+@media (max-width: 576px) {
+  .form-card {
+    padding: 1.2rem 1rem;
+  }
+  .site-title {
+    font-size: 1.5rem;
+  }
+}
